@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;1,600&family=Nunito:wght@400;700;800&display=swap');
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'IBM Plex Mono', monospace;
+}
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  background-color: #19191a;
+  background-image: linear-gradient(
+    135deg,
+    #19191a 0%,
+    #584f57 46%,
+    #161615 100%
+  );
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  width: 100%;
+  height: 100%;
+}
+.container.ativo {
+  display: none;
+}
+.boxContainer {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  height: 400px;
+  margin-top: 7%;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 15px;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.3);
+}
+.title-svg {
+  width: 100%;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+.title-svg svg {
+  width: 80px;
+  height: 80px;
+}
+h1 {
+  color: rgb(153, 152, 152);
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 700;
+  margin: 0 0 20px 0;
+}
+.caixa1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+form {
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+form label {
+  color: rgb(153, 152, 152);
+  align-self: flex-start;
+  padding-left: 40px;
+  padding-bottom: 5px;
+}
+form input {
+  width: 70%;
+  background-color: rgb(53, 53, 53);
+  padding: 15px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 10px;
+  color: rgb(153, 152, 152);
+  border: none;
+  display: block;
+  margin-bottom: 10px;
+  outline: none;
+  font-size: 1rem;
+}
+form [type='button'] {
+  width: 79%;
+  background-color: rgb(53, 53, 53);
+  color: rgb(153, 152, 152);
+  padding: 15px;
+  text-align: center;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 1rem;
+  text-transform: capitalize;
+}
+#botao1:hover {
+  background-color: rgb(100, 100, 100);
+  color: rgb(225, 225, 200);
+}
+#footer {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+#footer.ativo {
+  display: none;
+}
+
+div#sessao {
+  background-color: rgb(53, 53, 53);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 3px;
+  cursor: pointer;
+}
+
+div#sessao:hover {
+  width: 18px;
+  height: 18px;
+  background-color: rgb(8, 8, 8);
+  transition: all 0.3s;
+}
+
+.cronometro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+/* Outro HTML */
+
+.contador-principal {
+  display: none;
+}
+.contador-principal.ativo {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+}
+.header-menu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+div#contador {
+  color: rgb(153, 152, 152);
+  margin: 20px;
+  display: inline-block;
+  font-size: 25pt;
+  font-weight: bolder;
+}
+button#botao2 {
+  background-color: rgb(10, 150, 44);
+  padding: 10px;
+  width: 120px;
+  border-radius: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  color: #222121;
+}
+button#botao3 {
+  background-color: #222121;
+  padding: 10px;
+  width: 120px;
+  border-radius: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #fff;
+  border: none;
+}
+button#botao4 {
+  background-color: #222121;
+  padding: 10px;
+  width: 120px;
+  border-radius: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #fff;
+  border: none;
+  display: none;
+}
+button#botao4.ativo {
+  display: inline-block;
+}
+button#botao2:hover,
+button#botao3:hover,
+button#botao4:hover {
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+}
+
+h1#text2 {
+  color: rgb(153, 152, 152);
+  font-size: 4rem;
+}
+.container1 {
+  color: rgb(40, 40, 40);
+  display: flex;
+  text-align: center;
+  font-weight: bold;
+  font-size: 8rem;
+  height: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
+.container2 {
+  color: #ccc;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: 50%;
+  font-weight: bold;
+  font-size: 2rem;
+  display: none;
+}
+.container2.ativo {
+  display: flex;
+}
